@@ -4,9 +4,10 @@ public class Demo6task_b {
         //System.out.print("+");
         //System.out.println("-".repeat(5));
 
-        String COLOR1= "\033[31m";
+        String COLOR1= "\033[33m";
 
-        String COLOR2= "\033[34m";
+        String COLOR2= "\033[34;1m";
+        String col3="\033[31m";
         String RESET= "\033[0m";
         String LINE="%s+-----------------+-----+ \n";
         
@@ -21,7 +22,7 @@ public class Demo6task_b {
         System.out.printf(LINE, COLOR1);
 
 
-        System.out.printf("|%6$s%s%5$12s%7$s| %s%5$2s|\n|%6$s%s%5$14s%7$s| %s%5$2s|\n", name1,age1,name2,age2,"",RESET,COLOR1);
+        System.out.printf("|%6$s%s%5$12s%7$s| %8$s%s%5$2s%7$s|\n|%6$s%s%5$14s%7$s| %8$s%s%5$2s%7$s|\n", name1,age1,name2,age2,"",RESET,COLOR1,col3);
 
         System.out.printf(LINE, COLOR1);        
 
