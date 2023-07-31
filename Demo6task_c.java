@@ -7,12 +7,12 @@ public class Demo6task_c {
         String col2="\033[32m";
         String col3="\033[0m";
         String col4="\033[31m";
-        String CONSTANT1="%4$d%2$s,%3$s%5$d%2$s,%3$s%6$d" ;
+        //String CONSTANT1="%4$d%2$s,%3$s%5$d%2$s,%3$s%6$d" ;
 
         String LINE="%s+-----------------+-------------+-------------+\n";
         
         System.out.printf(LINE, COLOR1);
-        System.out.printf("|%1$sCITY%3$13s%2$s|%1$sSTATE%2$s%3$8s|%1$sPOPULATION%2$s%3$3s| \n", RESET, COLOR1,"");
+        System.out.printf("|%1$sCITY%3$13s%2$s|%1$sSTATE%2$s%3$8s|%1$s POPULATION%2$s%3$2s| \n", RESET, COLOR1,"");
         System.out.printf(LINE, COLOR1);
 
 
